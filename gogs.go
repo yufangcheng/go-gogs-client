@@ -33,7 +33,7 @@ func NewClient(url, token string) *Client {
 	}
 }
 
-func (c *Client) setAccessToken(token string) *Client {
+func (c *Client) SetAccessToken(token string) *Client {
 	c.accessToken = token
 	return c
 }
