@@ -33,6 +33,11 @@ func NewClient(url, token string) *Client {
 	}
 }
 
+func (c *Client) setAccessToken(token string) *Client {
+	c.accessToken = token
+	return c
+}
+
 // SetHTTPClient replaces default http.Client with user given one.
 func (c *Client) SetHTTPClient(client *http.Client) {
 	c.client = client
